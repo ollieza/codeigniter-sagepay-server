@@ -4,7 +4,7 @@
  * 	Sage Pay Server Class
  *	Handles SagePay Server payments
  *
- * This CodeIgniter library to integrate the Sage Pay Go Form service
+ * This CodeIgniter library to integrate the Sage Pay Go Server service
  * http://www.sagepay.com/products_services/sage_pay_go/integration/server
  * 
  * @package	  sagepay_server
@@ -109,6 +109,9 @@ class sagepay_server
 			}
 		}
 		
+		// Ensure the Amount is properly formatted to 2 decimal places
+		$this->transaction['Amount'] = $this->format_two_decimal_places($this->transaction['Amount']);
+
 		// Create an array to save to the db
 		$transaction_details_for_db = array(
 		               				'VendorTxCode' 			=> $this->transaction['VendorTxCode'],
@@ -385,6 +388,13 @@ class sagepay_server
 
 	// --------------------------------------------------------------------
 	
+	function format_two_decimal_places($number = NULL)
+	{
+		return number_format($number, 2, '.', '');
+	}
+
+	// --------------------------------------------------------------------
+		
 	// Redirect browser to an external URL
 	function external_redirect($url)
 	{
