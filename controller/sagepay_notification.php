@@ -8,7 +8,7 @@
  * different actions based on the type of transaction (e.g. a membership renewal,
  * a shop purchase etc)
  *
- * @package	sagepay_server
+ * @package	  sagepay_server
  * @author    Ollie Rattue, Too many tabs <orattue[at]toomanytabs.com>
  * @copyright Copyright (c) 2011, Ollie Rattue
  * @license   http://www.opensource.org/licenses/mit-license.php

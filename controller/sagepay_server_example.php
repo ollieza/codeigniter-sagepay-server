@@ -6,7 +6,7 @@
  * Functional code to pass order to Sage Pay Go Server service
  * http://www.sagepay.com/products_services/sage_pay_go/integration/server
  *
- * @package	sagepay_server
+ * @package	  sagepay_server
  * @author    Ollie Rattue, Too many tabs <orattue[at]toomanytabs.com>
  * @copyright Copyright (c) 2011, Ollie Rattue
  * @license   http://www.opensource.org/licenses/mit-license.php
