@@ -1,5 +1,5 @@
-SagePay Server library - production ready
-=============================================
+SagePay Server library - Production ready - CI 2.1.0 compatible
+===============================================================
 
 This CodeIgniter library handles payments via SagePay's
 Server e-commerce system.
