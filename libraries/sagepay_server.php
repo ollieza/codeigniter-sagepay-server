@@ -313,7 +313,7 @@ class sagepay_server
 							'Status'		=> "{$status} - {$status_detail}"
 							);
 
-			$this->CI->sagepay_model->update_transaction($response_array, $this->VendorTxCode);
+			$this->CI->sagepay_server_model->update_transaction($response_array, $this->transaction['VendorTxCode']);
 
 			return FALSE;
 		}
